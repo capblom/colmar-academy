@@ -33,6 +33,7 @@ body {
   background-color: #f1e7da;
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
 }
 
@@ -58,4 +59,72 @@ body {
   color: White;
   padding: 8px 0;
   text-align: center;
+}
+
+/* info section */
+
+.info-container {
+  padding: 16px 16px 8px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-box img {
+  max-width: 100%;
+  height: auto;
+}
+
+.info-box a {
+  display: block;
+  padding-bottom: 16px;
+}
+
+.info-box-text {
+  padding: 16px;
+}
+
+/* learn section */
+
+.learn-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.learn-container h1 {
+  text-align: center;
+  padding: 16px;
+}
+
+.learn-box {
+  background-color: #f1e7da;
+  padding: 16px;
+  margin: 0 16px 8px 16px;
+}
+
+/* thesis section */
+
+.thesis-container {
+  margin-bottom: 24px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.thesis-header h1 {
+  padding-top: 32px;
+  padding-bottom: 16px;
+}
+
+.thesis-video video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* footer */
+
+footer span {
+  padding: 16px;
 }
