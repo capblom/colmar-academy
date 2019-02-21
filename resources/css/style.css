@@ -1,0 +1,61 @@
+/* universal styles */
+
+html {
+  font-size: 18px;
+}
+
+body {
+
+}
+
+/* navbar */
+
+.nav-container {
+  width: 100%;;
+  background-color: White;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+
+}
+
+.nav-container ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  padding: 0 24px;
+}
+
+/* header */
+
+.header-container {
+  background-color: #f1e7da;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.header-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.header-text {
+  padding: 32px 16px;
+}
+
+.header-text h1 {
+  margin-bottom: 32px;
+}
+
+.header-text p {
+  margin-bottom: 24px;
+}
+
+.header-button {
+  background-color: #372815;
+  color: White;
+  padding: 8px 0;
+  text-align: center;
+}
