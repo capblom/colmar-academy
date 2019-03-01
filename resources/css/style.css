@@ -1,0 +1,280 @@
+/* universal styling */
+
+html {
+  font-size: 18px;
+}
+
+/* fixed navbar */
+
+.navbar-mobile ul {
+  width: 100%;
+  height: 64px;
+  background-color: #fce8e8;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar-mobile li {
+  display: inline-block;
+}
+
+/* mobile navbar */
+@media only screen and (max-width: 768px) {
+  .navbar-desktop {
+    display: none;
+  }
+}
+
+
+/* desktop navbar */
+@media only screen and (min-width: 768px) {
+  .navbar-mobile {
+    display: none;
+  }
+
+  .navbar-desktop {
+    width: 100%;
+    height: 64px;
+    background-color: #fce8e8;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+  }
+
+  .logo span {
+    padding-left: 4px;
+  }
+
+  .nav-list {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-list ul {
+    padding-right: 16px;
+  }
+
+  .nav-list li {
+    display: inline-block;
+    padding: 8px;
+  }
+}
+
+/* banner */
+
+.mobile-banner {
+  background-color: #f9d2d2;
+  margin-top: 64px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-banner img {
+  max-width: 100%;
+  height: auto;
+}
+
+.mobile-banner h1 {
+  padding: 32px 16px;
+}
+
+.mobile-banner span {
+  padding: 0 16px 24px 16px;
+}
+
+.mobile-banner-button {
+  background-color: #f08080;
+  margin: 0 16px 32px 16px;
+}
+
+.mobile-banner-button h3 {
+  text-align: center;
+  color: White;
+  padding: 8px 0
+}
+
+/* mobile banner */
+@media only screen and (max-width: 768px) {
+  .desktop-banner {
+    display: none;
+  }
+}
+
+/* desktop banner */
+@media only screen and (min-width: 768px) {
+  .mobile-banner {
+    display: none;
+  }
+
+    .desktop-banner {
+      background-color: #fad1d1;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      padding-top: 96px;
+      padding-bottom: 32px;
+    }
+
+    .banner-left {
+      width: 60%;
+      padding-left: 24px;
+    }
+
+    .banner-left img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .banner-right {
+      width: 40%;
+      padding-left: 24px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .banner-right span {
+      display: block;
+      padding: 32px 0;
+    }
+
+    .desktop-banner-button {
+      background-color: #f08080;
+      width: 65%;
+    }
+
+    .desktop-banner-button h3 {
+      text-align: center;
+      color: White;
+      padding: 8px 0
+    }
+
+}
+
+/* info section */
+
+.mobile-info {
+  background-color: #fce8e8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.mobile-info-box {
+  display: flex;
+  flex-direction: column;
+  margin: 16px;
+}
+
+.mobile-info-box img {
+  max-width: 100%;
+  height: auto;
+}
+
+.mobile-info-box h3 {
+  padding: 16px 16px 8px 16px;
+}
+
+.mobile-info span {
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+/* mobile info section */
+@media only screen and (max-width: 768px) {
+  .desktop-info {
+    display: none;
+  }
+}
+
+/* desktop info section */
+@media only screen and (min-width: 768px) {
+  .mobile-info {
+    display: none;
+  }
+
+  .desktop-info {
+    background-color: #fce8e8;
+    width: 100%;
+    padding-top: 32px;
+    display: flex;
+  }
+
+  .info-left {
+    width: 60%;
+    padding-left: 24px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info-left img {
+    width: 100%;
+    height: auto;
+  }
+
+  .info-left h2 {
+    padding-top: 32px;
+  }
+
+  .info-left p {
+    padding: 24px 0;
+  }
+
+  .info-left span {
+    display: block;
+    padding-bottom: 32px;
+  }
+
+  .info-right {
+    width: 40%;
+    padding-left: 24px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .desktop-info-box {
+    display: flex;
+    padding-left: 16px;
+    align-items: center;
+  }
+
+  .info-box-image {
+    width: 35%;
+    padding-bottom: 16px;
+  }
+
+  .info-box-image img {
+    width: 100%;
+    height:auto;
+  }
+
+  .info-box-text {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    margin-right: 16px;
+  }
+
+  .info-box-text span {
+    display: block;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+}
