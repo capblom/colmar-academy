@@ -4,12 +4,48 @@ html {
   font-size: 18px;
 }
 
+body {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 300;
+  line-height: 1.8rem;
+}
+
+em {
+  color: Black;
+}
+
+h1 {
+  font-family: 'Noto Serif', serif;
+  line-height: 2.8rem;
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: 'Noto Serif', serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #00bfff;
+}
+
 /* fixed navbar */
 
 .navbar-mobile ul {
   width: 100%;
   height: 64px;
-  background-color: #fce8e8;
+  background-color: White;
   position: fixed;
   top: 0;
   z-index: 1;
@@ -21,6 +57,7 @@ html {
 .navbar-mobile li {
   display: inline-block;
 }
+
 
 /* mobile navbar */
 @media only screen and (max-width: 768px) {
@@ -39,7 +76,7 @@ html {
   .navbar-desktop {
     width: 100%;
     height: 64px;
-    background-color: #fce8e8;
+    background-color: White;
     position: fixed;
     top: 0;
     z-index: 1;
@@ -56,7 +93,11 @@ html {
 
   .logo span {
     padding-left: 4px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #00bfff;
   }
+
 
   .nav-list {
     display: flex;
@@ -76,7 +117,7 @@ html {
 /* banner */
 
 .mobile-banner {
-  background-color: #f9d2d2;
+  background-color: #f2f2f2;
   margin-top: 64px;
   width: 100%;
   display: flex;
@@ -88,7 +129,7 @@ html {
   height: auto;
 }
 
-.mobile-banner h1 {
+.mobile-banner h2 {
   padding: 32px 16px;
 }
 
@@ -97,7 +138,7 @@ html {
 }
 
 .mobile-banner-button {
-  background-color: #f08080;
+  background-color: #00bfff;
   margin: 0 16px 32px 16px;
 }
 
@@ -121,7 +162,7 @@ html {
   }
 
     .desktop-banner {
-      background-color: #fad1d1;
+      background-color: #f2f2f2;
       display: flex;
       align-items: center;
       width: 100%;
@@ -152,7 +193,7 @@ html {
     }
 
     .desktop-banner-button {
-      background-color: #f08080;
+      background-color: #00bfff;
       width: 65%;
     }
 
@@ -167,7 +208,6 @@ html {
 /* info section */
 
 .mobile-info {
-  background-color: #fce8e8;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -209,7 +249,6 @@ html {
   }
 
   .desktop-info {
-    background-color: #fce8e8;
     width: 100%;
     padding-top: 32px;
     display: flex;
@@ -282,21 +321,21 @@ html {
 /* main link section */
 
 .mobile-links {
-  background-color: #f9d2d2;
+  background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-bottom: 28px;
 }
 
-.mobile-links h1 {
+.mobile-links h2 {
   text-align: center;
   margin-top: 32px;
   padding-bottom: 12px;
 }
 
 .mobile-links span {
-  background-color: #f08080;
+  background-color: #00bfff;
   color: White;
   display: block;
   margin: 4px 16px;
@@ -317,22 +356,32 @@ html {
     display: none;
   }
 
+  .desktop-links a:visited {
+    color: Black;
+  }
+
   .desktop-links {
+    background-color: #f2f2f2;
     display: flex;
     flex-wrap: wrap;
-    background-color: #f9d2d2;
     justify-content: center;
     padding: 32px 40px;
   }
+
+
   .desktop-links h2 {
     text-align: center;
     width: 100%;
   }
 
   .desktop-links-box {
-    background-color: #fce8e8;
+    background-color: White;
     width: 28%;
     margin: 32px;
+  }
+
+  .desktop-links-box:hover {
+    background-color: #e6e6e6;
   }
 
   .desktop-links-box img {
@@ -358,14 +407,13 @@ html {
 /* thesis section */
 
 .mobile-thesis-section {
-  background-color: #fce8e8;
   width: 100%;
   display: flex;
   flex-direction: column;
   padding: 24px 0;
 }
 
-.mobile-thesis-section h1 {
+.mobile-thesis-section h2 {
   text-align: center;
   padding-top: 8px;
   padding-bottom: 16px;
@@ -381,6 +429,9 @@ html {
   .desktop-thesis {
     display: none;
   }
+  .thesis-title {
+    display: none;
+  }
 }
 
 /* desktop thesis section */
@@ -390,10 +441,15 @@ html {
   }
 
     .desktop-thesis {
-      background-color: #fce8e8;
       width: 100%;
       padding-top: 32px;
       display: flex;
+    }
+
+    .thesis-title {
+      width: 100%;
+      text-align: center;
+      padding-top: 32px;
     }
 
     .thesis-left {
@@ -435,9 +491,10 @@ html {
       align-items: center;
     }
 
+
     .thesis-box-image {
       width: 35%;
-      padding-bottom: 16px;
+      margin-bottom: 16px;
     }
 
     .thesis-box-image img {
@@ -449,6 +506,7 @@ html {
       width: 65%;
       display: flex;
       flex-direction: column;
+      justify-content: center;
       padding: 16px;
       margin-right: 16px;
     }
@@ -463,9 +521,10 @@ html {
 /* footer section */
 
 footer {
+  background-color: #00bfff;
+  color: White;
   text-align: center;
   padding: 16px;
-  background-color: #f9d2d2;
 }
 
 /* mobile footer section */
@@ -475,13 +534,15 @@ footer {
   }
 }
 
-/* desktop thesis section */
+/* desktop footer section */
 @media only screen and (min-width: 768px) {
   footer {
     display: none;
   }
 
   .desktop-footer {
+    background-color: #00bfff;
+    color: White;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -493,7 +554,11 @@ footer {
     margin-right: 16px;
   }
 
-  .desktop-footer li {    
+  .desktop-footer li {
     padding: 16px;
+  }
+
+  .desktop-footer a:visited {
+    color: White;
   }
 }
